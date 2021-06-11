@@ -4,6 +4,10 @@
 * [Introduction](#introduction)
 * [Project Details](#project-details)
 * [Technologies Used](#technologies-used)
+* [Code](#code)
+    * [Notebooks](#notebooks)
+    * [Codes](#codes)
+    * [Server_Codes](#server_codes)
 * [Authors and Advisor](#authors-and-advisor)
 
 ## Introduction

@@ -25,8 +25,8 @@ def predict(data, size):
     sequence_length = int(size)  
 
     #Organizing the data and keeping only the columns that will be used in the model
-    features = ['day of the week','day of the year','hour of the day','AirTemp', 'rh']
-    labels   = ['TGBT']
+    features = ['day of the year','hour of the day','rh', 'POA', 'Tp', 'Solaire']
+    labels   = ['Pmax']
     inputs   = features + labels
     data = data[inputs]
 
@@ -83,4 +83,4 @@ frames = [Predict_3h,Predict_6h.iloc[-12:],Predict_1d.iloc[-72:]]
 
 #####Change file path#####
 Forecast = pd.concat(frames)
-Forecast.to_csv('NRLab_conso_fcast.csv', index = True)
+Forecast.to_csv('NRLab_prod_fcast.csv', index = True)
